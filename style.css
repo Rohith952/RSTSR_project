@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.home-bg {
+    background: linear-gradient(135deg, #fc466b, #3f5efb);
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.platform-container .logos img {
+    width: 150px;
+    margin: 30px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.platform-container .logos img:hover {
+    transform: scale(1.1);
+}
+
+.instagram-bg {
+    background: url('/static/images/instagram1.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+.facebook-bg {
+    background: url('/static/images/facebook2.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+.twitter-bg {
+    background: url('/static/images/t2.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* Similar styles can be added for facebook-bg, twitter-bg */
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    padding: 30px;
+    width: 90%;
+    max-width: 400px;
+    margin: 60px auto;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.7);
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form button {
+    align-self: center;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e1306c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #c13584;
+}
+
+.result {
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    color: #ffcc00;
+    font-weight: bold;
+}

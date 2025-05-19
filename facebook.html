@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Facebook Profile Detector</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="facebook-bg">
+    <div class="container">
+        <h1>Facebook Fake Profile Detector</h1>
+        <form method="POST">
+            <label>Username:</label>
+            <input type="text" name="username" required><br><br>
+
+            <label>Friends:</label>
+            <input type="number" name="friends" required><br><br>
+
+            <label>Posts:</label>
+            <input type="number" name="posts" required><br><br>
+
+            <label>Avg Likes:</label>
+            <input type="number" name="likes" required><br><br>
+
+            <label>Bio:</label>
+            <input type="text" name="bio"><br><br>
+
+            <button type="submit">Check</button>
+        </form>
+
+        {% if result %}
+            <div class="result">{{ result }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>

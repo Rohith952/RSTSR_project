@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Twitter Profile Detector</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="twitter-bg">
+    <div class="container">
+        <h1>Twitter Fake Profile Detector</h1>
+        <form method="POST">
+            <label>Username:</label>
+            <input type="text" name="username" required><br><br>
+
+            <label>Followers:</label>
+            <input type="number" name="followers" required><br><br>
+
+            <label>Tweets:</label>
+            <input type="number" name="tweets" required><br><br>
+
+            <label>Likes:</label>
+            <input type="number" name="likes" required><br><br>
+
+            <label>Bio:</label>
+            <input type="text" name="bio"><br><br>
+
+            <button type="submit">Check</button>
+        </form>
+
+        {% if result %}
+            <div class="result">{{ result }}</div>
+        {% endif %}
+    </div>
+</body>
+</html>
